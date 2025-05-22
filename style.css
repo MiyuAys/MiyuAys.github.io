@@ -7,7 +7,7 @@ header{
     background-color: #566C44;
     height: 80px;
     max-width: 100%;
-    position: relative;
+    position:relative;
 }
 h1{
     color:white;
@@ -42,17 +42,17 @@ header ul{
     right: 0vw;
     top: 0;
     line-height: 80px;
-    font-size: 30px;
+    font-size: 15px;
 }
 header li{
     display: inline;
     margin-right: 4vw;
-    font-size: 30px;
+    font-size: 15px;
 }
 header a{
     color: white;
     text-decoration: none;
-    opacity: 0.8;
+    opacity: 1;
 }
 header a:hover{
     text-decoration: underline;
@@ -60,7 +60,7 @@ header a:hover{
 .n{
     background-color: #6B8857;
     color: rgb(255, 255, 255);
-    height: 85vh;
+    height: 90vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -109,16 +109,37 @@ header a:hover{
 
 .v{
     max-width: 100%;
-    color: #Faf2cb;
-    color: rgb(56, 54, 54);
-    height: 85vh;
+    background-color: #Faf2cb;
+    color: rgb(89, 89, 89);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .v h4{
+    font-size: 1rem;
+    margin:10px 0;
+    opacity: 0;
     animation: fadeIn 2s ease-in forwards;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.v h5{
+    font-size: 15px;
+    margin:10px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin-bottom: 30px;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -140,15 +161,25 @@ header a:hover{
 
 .b{
     background-color: #a7c190;
-    color: rgb(56, 54, 54);
-    height: 85vh;
-    height: 800px;
-    width: 100%;
+    color: rgb(105, 103, 103);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-items: center;
-    margin-top: -10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.b h4{
+    font-size: 1rem;
+    margin:10px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 footer {
     background-color: #566C44;
@@ -158,4 +189,42 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 12.5px;
+}
+.menu {
+    display: none;
+}
+/* 響應式設計語法 */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+    header h1 {
+        display: none;
+    }
+    header h3 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .n h4{
+        font-size: 20px;
+    }
+    .n p{
+        font-size: 15px;
+    }
+    .menu {
+        display:block;
+        background-color: #566C44;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        border:none;
+        cursor:  pointer
+    }
+    .v{
+        height: 120vh;;
+    }
+
 }
