@@ -272,10 +272,11 @@ footer {
     .n p{
         font-size: 10px;
     }
-    .menu {
-        display:block;
+
+    .mil-menu-btn{
+        display: block;
         background-color: #566C44;
-        color: white;
+        color: rgb(139, 125, 125);
         font-size: 35px;
         position: absolute;
         top: 15px;
@@ -283,6 +284,126 @@ footer {
         border:none;
         cursor:  pointer
     }
+    /* 父容器需設置相對定位 */
+.mil-nav-container {
+  position: relative;
+}
+
+.mil-navigation {
+  display: block; 
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;    
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  z-index: 1000;
+}
+
+
+/* 展開時的樣式 */
+  .mil-navigation.mil-active {
+     opacity: 1;
+     max-height: 1200px; /* 根據內容高度調整 */
+    }
+  .mil-nav-container {
+      position: relative;
+   } 
+
+
+    .mil-menu-btn {
+      cursor: pointer;
+      padding: 10px;
+      z-index: 1001; 
+    }
+    .mil-menu-btn span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: #ffffff;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .mil-menu-btn span::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      transition: inherit;
+    }
+    .mil-menu-btn span::before {
+      top: -8px;
+    }
+    .mil-menu-btn span::after {
+      top: 8px;
+    }
+    .mil-menu-btn.mil-active span {
+      transform: rotate(45deg);
+    }
+    .mil-menu-btn.mil-active span::before {
+      transform: translateY(8px) rotate(-90deg);
+    }
+    .mil-menu-btn.mil-active span::after {
+      transform: translateY(-8px) rotate(-90deg);
+    }
+    .mil-navigation {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #566C44;
+      box-shadow: 0 4px 8px rgb(255, 255, 255);
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.3s ease, max-height 0.3s ease;
+      z-index: 1000;
+    }
+    .mil-navigation.mil-active {
+      opacity: 1;
+      max-height: 500px; 
+    }
+    .mil-navigation ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .mil-navigation li {
+        display: block;
+        border-bottom:1px solid #c9e5ca
+    }
+    .mil-navigation a{
+        display: block;
+        padding: 12px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .mil-navigation a:hover{
+        background: #a7c190;
+    }
+
+/* 桌面端顯示常規導航 */
+@media (min-width: 768px) {
+  .mil-menu-btn {
+    display: none;
+  }
+  .mil-navigation {
+    position: static;
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+    
     .v{
         height: 120vh;;
     }
