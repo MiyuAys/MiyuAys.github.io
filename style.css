@@ -57,6 +57,7 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
+
 .n{
     background-color: #6B8857;
     color: rgb(255, 255, 255);
@@ -198,11 +199,12 @@ footer {
     display: none;
 }
 
+
 .Community{
     max-width: 100%;
     background-color: #Faf2cb;
     color: rgb(89, 89, 89);
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -283,6 +285,9 @@ footer {
     }
     .v{
         height: 120vh;;
+    }
+    .Community{
+        height: 130vh;;
     }
 
 }
