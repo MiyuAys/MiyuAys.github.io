@@ -88,7 +88,7 @@ header a:hover{
     gap: 2px; 
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
-    margin:10px 0;
+    margin: 15px;
 }
 
 @keyframes fadeIn {
@@ -181,6 +181,9 @@ header a:hover{
     margin-bottom: 30px;
     text-align: center;
     margin-bottom: 1.5rem;
+}
+hr{
+    animation: fadeIn 2s ease-in forwards;
 }
 footer {
     background-color: #566C44;
