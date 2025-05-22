@@ -88,6 +88,7 @@ header a:hover{
     gap: 2px; 
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
+    margin:10px 0;
 }
 
 @keyframes fadeIn {
@@ -207,10 +208,10 @@ footer {
         transform: translateX(-50%);
     }
     .n h4{
-        font-size: 20px;
+        font-size: 15px;
     }
     .n p{
-        font-size: 15px;
+        font-size: 10px;
     }
     .menu {
         display:block;
