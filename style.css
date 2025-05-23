@@ -3,6 +3,10 @@
     margin: 0;
 
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 header{
     background-color: #566C44;
     height: 80px;
@@ -77,11 +81,6 @@ header a:hover{
     margin-bottom: 30px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 .n p{
     font-size: 15px;
     display: flex;
@@ -90,11 +89,6 @@ header a:hover{
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
     margin: 15px;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .n a{
@@ -132,10 +126,7 @@ header a:hover{
     text-align: center;
     margin-bottom: 1.5rem;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+
 .v p {
   font-size: 15px;
     display: flex;
@@ -150,15 +141,6 @@ header a:hover{
   align-items: center;
     justify-items: center;
 }
-.v hr {
-  align-items: center;
-    justify-items: center;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 
 .sa {
       margin-top: 20px;
@@ -194,13 +176,8 @@ header a:hover{
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
     color: #ffffff;
-
-
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+
 
 .b{
     background-color: #f8fff2;
@@ -264,10 +241,7 @@ footer {
     text-align: center;
     margin-bottom: 1.5rem;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+
 .Community h5{
     font-size: 15px;
     margin:10px 0;
@@ -275,10 +249,7 @@ footer {
     animation: fadeIn 2s ease-in forwards;
     margin-bottom: 30px;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+
 
 .Community p{
     font-size: 15px;
@@ -289,11 +260,40 @@ footer {
     animation: fadeIn 2s ease-in forwards;
     margin: 15px;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
+
+.Staff{
+    max-width: 100%;
+    background-color: #Faf2cb;
+    color: rgb(89, 89, 89);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.Staff h4{
+    font-size: 1rem;
+    margin:10px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.Staff p{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin: 15px;
+}
 
 /* 響應式設計語法 */
 @media screen and (max-width: 768px) {
