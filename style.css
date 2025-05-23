@@ -263,7 +263,7 @@ footer {
     }
     header h3 {
         position: relative;
-        left: 50%;
+        left: 55%;
         transform: translateX(-50%);
     }
     .n h4{
@@ -282,7 +282,10 @@ footer {
         top: 15px;
         right: 20px;
         border:none;
-        cursor:  pointer
+        cursor:  pointer;
+        justify-content: center;
+        justify-items: center;
+        
     }
     /* 父容器需設置相對定位 */
 .mil-nav-container {
@@ -299,7 +302,7 @@ footer {
   left: 0;
   width: 100%;
   background: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease, max-height 0.3s ease;
   z-index: 1000;
 }
@@ -308,7 +311,7 @@ footer {
 /* 展開時的樣式 */
   .mil-navigation.mil-active {
      opacity: 1;
-     max-height: 1200px; /* 根據內容高度調整 */
+     max-height: 1000px; /* 根據內容高度調整 */
     }
   .mil-nav-container {
       position: relative;
@@ -320,10 +323,12 @@ footer {
       padding: 10px;
       z-index: 1001; 
     }
+
     .mil-menu-btn span {
       display: block;
-      width: 30px;
-      height: 2px;
+      width: 40px;
+      height: 3px;
+      line-height: 80px;
       background: #ffffff;
       position: relative;
       transition: all 0.3s ease;
@@ -363,7 +368,7 @@ footer {
       max-height: 0;
       overflow: hidden;
       transition: opacity 0.3s ease, max-height 0.3s ease;
-      z-index: 1000;
+      z-index: 1000
     }
     .mil-navigation.mil-active {
       opacity: 1;
@@ -373,19 +378,26 @@ footer {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .mil-navigation li {
         display: block;
-        border-bottom:1px solid #c9e5ca
+        border-bottom:1px solid #eeffee
     }
     .mil-navigation a{
         display: block;
         padding: 12px;
         color: #ffffff;
+        justify-items: center;
+        align-items: center;
         text-decoration: none;
+        height: 70px;
+        line-height: 70px;
     }
     .mil-navigation a:hover{
-        background: #a7c190;
+        background: #75915d;
     }
 
 /* 桌面端顯示常規導航 */
@@ -408,7 +420,7 @@ footer {
         height: 120vh;;
     }
     .Community{
-        height: 130vh;;
+        height: 180vh;;
     }
 
 }
