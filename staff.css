@@ -19,6 +19,7 @@ main {
 
         /* 成員卡片容器 */
         .staff-container {
+            animation: fadeIn 2s ease-in forwards;
             max-width: 1000px;
             margin: 0 auto;
         }
