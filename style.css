@@ -107,8 +107,8 @@ header a:hover{
     max-width: 100%;
     background-color: #Faf2cb;
     color: rgb(89, 89, 89);
-    height: 100vh;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     align-items: left;
     justify-items: center;
@@ -144,8 +144,7 @@ header a:hover{
 
 .sa {
       margin-top: 20px;
-      max-height: 400px;
-      overflow-y: auto;
+      max-height: 500px;
       animation: fadeIn 2s ease-in forwards;
     }
 
@@ -344,6 +343,20 @@ footer {
     .n p{
         font-size: 10px;
     }
+   .v{
+    max-width: 100%;
+    background-color: #Faf2cb;
+    color: rgb(89, 89, 89);
+    display: flex;
+    min-height: 170vh;
+    flex-direction: column;
+    align-items: left;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Noto Sans TC', sans-serif;
+   }
 
     .mil-menu-btn{
         display: block;
@@ -485,6 +498,8 @@ footer {
     background: transparent;
     box-shadow: none;
   }
+
+    
 }
 
     
@@ -493,6 +508,12 @@ footer {
     }
     .Community{
         height: 180vh;;
+    }
+
+    .sa{
+      margin-top: 30px;
+      max-height: 2000px;
+      animation: fadeIn 2s ease-in forwards;
     }
 
 }
