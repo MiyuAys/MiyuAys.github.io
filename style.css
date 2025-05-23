@@ -143,29 +143,59 @@ header a:hover{
     gap: 2px; 
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
+  
+}
+
+.v1 {
+  align-items: center;
+    justify-items: center;
+}
+.v hr {
+  align-items: center;
+    justify-items: center;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-.sa h5{
-   font-size: 15px;
+
+.sa {
+      margin-top: 20px;
+      max-height: 400px;
+      overflow-y: auto;
+      animation: fadeIn 2s ease-in forwards;
+    }
+
+.sa1 {
+      padding: 15px;
+      margin-bottom: 15px;
+      background: #90b595;
+      border-left: 4px solid #2c4841;
+      transition: transform 0.3s ease;
+    }
+ 
+
+.sa1 h5{
+   font-size: 20px;
     margin:10px 0;
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
     margin-bottom: 30px;
+    color: rgb(90, 89, 89);
+  
 
 }
-.sa p {
+.sa1 p {
   font-size: 15px;
     display: flex;
     flex-direction: column;
     gap: 2px; 
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
-     display: flex;
-    justify-content: space-evenly;
+    color: #ffffff;
+
+
 }
 @keyframes fadeIn {
   from { opacity: 0; }

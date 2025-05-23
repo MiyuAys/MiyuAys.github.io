@@ -21,7 +21,7 @@
     
     .news-title {
       text-align: center;
-      color: #333;
+      color: #4d4747;
       border-bottom: 2px solid #f8ffff;
       padding-bottom: 10px;
     }
@@ -57,9 +57,12 @@
     
     .news-content {
       margin-top: 8px;
-      color: #333;
+      color: #656262;
       line-height: 1.6;
     }
+
+
+
     @media (max-width: 768px) {
       .news-item {
         padding: 10px;
