@@ -136,20 +136,8 @@ header a:hover{
   from { opacity: 0; }
   to { opacity: 1; }
 }
-.v h5{
-    font-size: 15px;
-    margin:10px 0;
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-    margin-bottom: 30px;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.v p{
-    font-size: 15px;
+.v p {
+  font-size: 15px;
     display: flex;
     flex-direction: column;
     gap: 2px; 
@@ -161,8 +149,31 @@ header a:hover{
   to { opacity: 1; }
 }
 
+.sa h5{
+   font-size: 15px;
+    margin:10px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin-bottom: 30px;
+
+}
+.sa p {
+  font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+     display: flex;
+    justify-content: space-evenly;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .b{
-    background-color: #a7c190;
+    background-color: #f8fff2;
     color: rgb(105, 103, 103);
     height: 100vh;
     display: flex;
@@ -252,6 +263,7 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 
 /* 響應式設計語法 */
 @media screen and (max-width: 768px) {

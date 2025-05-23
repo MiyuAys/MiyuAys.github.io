@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>休憩島 Relaxation-island</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -48,6 +49,7 @@
     <h4>詳細介紹</h4>
      <p>我們提供完善且低價的官方商店，讓玩家能夠輕鬆購買建築材料，縮短收集資源的時間，讓你能更專注於創造夢想中的建築。</p> 
      <hr style="width:70%; margin-top:10px; color:white">
+     <div class="sa">
     <h5>▼ 材料零壓力！</h5> 
      <p>官方商店 提供木材、石材甚至更多裝飾方塊，可使用低價遊戲幣購買！</p>
      <p>資源收集時間減少80%，建築效率最大化，同時不失去生存獨特玩法！</p>
@@ -60,10 +62,40 @@
      <p>反作弊 ！</p>
      <p>自動備份功能！</p>
      <p>十分詳細的指令教學！</p>
+     </div>
  </section>
 
   <section class="b">
-    <h4>最新消息</h4>
+  <div class="news-container">
+    <h2 class="news-title">最新消息</h2>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">2025-05-01</span>
+        <span class="news-tag">公告</span>
+        <p class="news-content">伺服器正在籌備中!</p>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025-05-10</span>
+        <span class="news-tag">公告</span>
+        <p class="news-content">小無名出沒！</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 动态加载数据（模拟）
+    setTimeout(() => {
+      const newsList = document.querySelector('.news-list');
+      newsList.innerHTML += `
+        <div class="news-item">
+          <span class="news-date">2025-05-23</span>
+          <span class="news-tag">更新</span>
+          <p class="news-content">新增網頁，快去看看吧！</p>
+        </div>
+      `;
+    }, 2000);
+
+  </script>
   </section>
  </main>
 
