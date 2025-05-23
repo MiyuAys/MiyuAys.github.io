@@ -1,0 +1,135 @@
+ /* 基礎樣式重置 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+main {
+            font-family: '微軟正黑體', Arial, sans-serif;
+            line-height: 1.6;
+            background: #Faf2cb;
+            padding: 40px 20px;
+        }
+
+        /* 成員卡片容器 */
+        .staff-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 單個成員區塊 */
+        .staff-member {
+            display: flex;
+            gap: 30px;
+            background: #6B8857;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* 頭像區樣式 */
+        .avatar {
+            flex: 0 0 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #173f29;
+            position: relative;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* 文字內容區 */
+        .content {
+            flex: 1;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #265319;
+        }
+
+        .position {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #ffffff;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* 聯繫資訊樣式 */
+        .contact-info {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info a {
+            color: #98fbf4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #e5faff;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            .staff-member {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .avatar {
+                flex: 0 0 150px;
+                height: 150px;
+            }
+
+            h2::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+        }
