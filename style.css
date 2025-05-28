@@ -7,6 +7,8 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/*導航*/
 header{
     background-color: #566C44;
     height: 80px;
@@ -62,7 +64,8 @@ header a:hover{
     text-decoration: underline;
 }
 
-.n{
+/*首頁*/
+.aboutus{
     background-color: #6B8857;
     color: rgb(255, 255, 255);
     height: 90vh;
@@ -73,7 +76,8 @@ header a:hover{
     justify-content: center;
     margin-top: -10px;
 }
-.n h4{
+
+.aboutus h4{
     font-size: 30px;
     margin:10px 0;
     opacity: 0;
@@ -81,7 +85,7 @@ header a:hover{
     margin-bottom: 30px;
 }
 
-.n p{
+.aboutus p{
     font-size: 15px;
     display: flex;
     flex-direction: column;
@@ -91,7 +95,7 @@ header a:hover{
     margin: 15px;
 }
 
-.n a{
+.aboutus a{
     color: rgb(255, 253, 253);
     text-decoration: none;
     border: 1px solid #ece8e8;
@@ -99,11 +103,12 @@ header a:hover{
     border-radius: 5px;
     display: inline;
 }
-.n a:hover{
+.aboutus a:hover{
     text-decoration: underline;
 }
 
-.v{
+/*介紹*/
+.introduce{
     max-width: 100%;
     background-color: #Faf2cb;
     color: rgb(89, 89, 89);
@@ -117,7 +122,7 @@ header a:hover{
     padding: 2rem;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.v h4{
+.introduce h4{
     font-size: 1rem;
     margin:10px 0;
     opacity: 0;
@@ -127,8 +132,8 @@ header a:hover{
     margin-bottom: 1.5rem;
 }
 
-.v p {
-  font-size: 15px;
+.introduce p {
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     gap: 2px; 
@@ -138,7 +143,7 @@ header a:hover{
 }
 
 .v1 {
-  align-items: center;
+    align-items: center;
     justify-items: center;
 }
 
@@ -164,9 +169,8 @@ header a:hover{
     animation: fadeIn 2s ease-in forwards;
     margin-bottom: 30px;
     color: rgb(90, 89, 89);
-  
-
 }
+
 .sa1 p {
   font-size: 15px;
     display: flex;
@@ -177,8 +181,8 @@ header a:hover{
     color: #ffffff;
 }
 
-
-.b{
+/**最新消息*/
+.new{
     background-color: #f8fff2;
     color: rgb(105, 103, 103);
     height: 100vh;
@@ -191,7 +195,7 @@ header a:hover{
     padding: 2rem;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.b h4{
+.new h4{
     font-size: 1rem;
     margin:10px 0;
     opacity: 0;
@@ -200,9 +204,13 @@ header a:hover{
     text-align: center;
     margin-bottom: 1.5rem;
 }
+
 hr{
     animation: fadeIn 2s ease-in forwards;
 }
+
+
+/*頁尾*/
 footer {
     background-color: #566C44;
     color: rgb(208, 205, 205);
@@ -212,6 +220,8 @@ footer {
     align-items: center;
     font-size: 12.5px;
 }
+
+/*漢堡*/
 .menu {
     display: none;
 }
@@ -231,6 +241,7 @@ footer {
     padding: 2rem;
     font-family: 'Noto Sans TC', sans-serif;
 }
+
 .Community h4{
     font-size: 1rem;
     margin:10px 0;
@@ -337,10 +348,10 @@ footer {
         left: 55%;
         transform: translateX(-50%);
     }
-    .n h4{
+    .aboutus h4{
         font-size: 15px;
     }
-    .n p{
+    .aboutus p{
         font-size: 10px;
     }
    
@@ -359,9 +370,10 @@ footer {
         justify-items: center;
         
     }
+
     /* 父容器需設置相對定位 */
 .mil-nav-container {
-  position: relative;
+      position: relative;
 }
 
 .mil-navigation {
@@ -490,7 +502,7 @@ footer {
 }
 
     
-    .v{
+    .introduce{
         height: 120vh;;
     }
     .Community{
