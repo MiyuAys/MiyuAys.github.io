@@ -39,6 +39,7 @@
             font-size: 2.8rem;
             margin-bottom: 10px;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+             animation: fadeIn 2s ease-in forwards;
         }
         
         .subtitle {
@@ -61,6 +62,7 @@
             margin: 0 auto 30px;
             position: relative;
             transition: all 0.4s ease;
+             animation: fadeIn 2s ease-in forwards;
         }
         
         .avatar {
@@ -138,6 +140,7 @@
             color: white;
             font-size: 1.4rem;
             transition: all 0.3s ease;
+             animation: fadeIn 2s ease-in forwards;
         }
         
         .social-links a:hover {
@@ -152,14 +155,79 @@
         }
         .social-links .in:hover { color: #0a66c2; }
 
+.in p{
+         font-size: 25px;
+          margin:20px 0;
+          opacity: 0;
+           justify-content: center;
+            align-items: center;
+           animation: fadeIn 2s ease-in forwards;
+        color: #585151;
+      
+}
+
+
+
+        .black-border-container {
+             animation: fadeIn 2s ease-in forwards;
+            width: 80%;
+            max-width: 1000px;
+            margin:10px 0;
+            border: 1px solid #716a6a;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.5); 
+        }
+
+        .content-area {
+            background-color: transparent;
+            padding: 20px;
+            color: #978c8c;
+        }
+
+        .content-area h5 {
+            color: #645c5c;
+            margin-bottom: 2px;
+        }
+
+        .content-area p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+.content-area a{
+        color: rgb(98, 126, 153);
+    text-decoration: none;
+    list-style-type: none;
+    border: 1px solid #8a8181;
+    padding:10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: inline;
+}
+.content-area  a:hover{
+    text-decoration: underline;
+}
+
+        .content-area a:hover {
+            text-decoration: underline;
+        }
+
+        .link-list {
+            margin-top: 30px;
+        }
+
+        .link-list li {
+            margin-bottom: 10px;
+        list-style-type: none;
+        }
+
+
+
+
+
+
         /*頁尾*/
-
-
-
-
-
-
-
 footer {
     background-color: #759ba4;
     color: rgb(244, 236, 236);
