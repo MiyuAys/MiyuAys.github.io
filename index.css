@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -6,159 +12,53 @@
 hr{
     animation: fadeIn 2s ease-in forwards;
 }
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+
         
-        body {
-             height: 90vh;
-            max-width: 100%;
-           display: flex;
-           flex-direction: column;
-           margin-top: -10px;
-            background: linear-gradient(135deg, #ffffff 0%, #fdfdef 100%);
-            padding: 20px;
-             flex-direction: column;
-        }
+
         
-        .container {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            color: rgb(255, 255, 255);
-            max-width: 800px;
-            padding: 30px;
-            background: rgb(255, 255, 255);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        }
+.aboutme {
+    background-color: #ababab;
+    color: #ffffff;
+    height: 95vh;
+    background-image: url(image2/1748946818866.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+
+.www h3 {
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+
+.www p {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
         
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-             animation: fadeIn 2s ease-in forwards;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        /* 头像容器 - 居中展示 */
-        .avatar-container {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid rgb(157, 168, 180);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            margin: 0 auto 30px;
-            position: relative;
-            transition: all 0.4s ease;
-             animation: fadeIn 2s ease-in forwards;
-        }
-        
-        .avatar {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-            
-        }.avatar-container:hover {
-            border-color: rgba(255, 255, 255, 0.8);
-            transform: scale(1.03);
-        }
-        
-        .avatar-container:hover .avatar {
-            transform: scale(1.1);
-        }
-        
-        /* 装饰元素 */
-        .avatar-container::before {
-            content: "";
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            right: -5px;
-            bottom: -5px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            pointer-events: none;
-        }
-        
-        /* 文字内容 */
-        .text-content {
-            margin: 30px 0;
-        }
-          .text-content h2 {
-          font-size: 30px;
-          margin:10px 0;
-          opacity: 0;
-           justify-content: center;
-            align-items: center;
-           animation: fadeIn 2s ease-in forwards;
-             margin-bottom: 30px;
-            color: rgb(92, 87, 87);
-        }
-        
-        .text-content p {
-             font-size: 20px;
-            display: flex;
-             flex-direction: column;
-             gap: 2px; 
-             opacity: 0;
-              justify-content: center;
-            align-items: center;
-                animation: fadeIn 2s ease-in forwards;
-                margin: 15px;
-                color: rgb(118, 103, 103);
-        }
-        
-        /* 社交图标 */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 1.4rem;
-            transition: all 0.3s ease;
-             animation: fadeIn 2s ease-in forwards;
-        }
-        
-        .social-links a:hover {
-            background: white;
-            transform: translateY(-5px);
-        }
-        .social-links .fb:hover { color: #1877f2; }
-        .social-links .tw:hover { color: #1da1f2; }
-        .social-links .ig:hover { 
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-            color: white;
-        }
-        .social-links .in:hover { color: #0a66c2; }
+.my  {
+    background-color: #f7f7f7;
+    height: 95vh;
+}
+       
+.lea {
+    background-color: #ffffff;
+}
 
 .in p{
-         font-size: 25px;
+         font-size: 30px;
           margin:20px 0;
           opacity: 0;
            justify-content: center;
@@ -167,18 +67,25 @@ hr{
         color: #585151;
       
 }
-
-
+  .all-class{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+             gap: 20px;
+            justify-content: space-evenly;
+            align-items: center;
+  }
 
         .black-border-container {
-             animation: fadeIn 2s ease-in forwards;
-            width: 80%;
+            animation: fadeIn 2s ease-in forwards;
+            width: 50%;
             max-width: 1000px;
             margin:10px 0;
             border: 1px solid #716a6a;
             padding: 30px;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.5); 
+            background-color: rgba(255, 255, 255, 0); 
+            justify-content: flex-start;
         }
 
         .content-area {
@@ -194,14 +101,14 @@ hr{
 
         .content-area p {
             line-height: 1.6;
-            margin-bottom: 15px;
+            font-size: 20px;
         }
 
 .content-area a{
-        color: rgb(98, 126, 153);
+        color: rgb(32, 59, 132);
     text-decoration: none;
     list-style-type: none;
-    border: 1px solid #8a8181;
+    border: 1px solid #275d89;
     padding:10px 20px;
     border-radius: 5px;
     font-size: 15px;
@@ -230,16 +137,17 @@ hr{
 
 
         /*頁尾*/
-footer {
-    background-color: #759ba4;
-    color: rgb(244, 236, 236);
-    height: 60px;
-    max-width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12.5px;
-}
+        footer {
+            background-color: #ababab;
+            color: rgb(255, 255, 255);
+            height: 60px;
+            margin-top: auto;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12.5px;
+        }
+
 
 
         /* 响应式设计 */
