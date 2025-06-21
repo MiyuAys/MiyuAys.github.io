@@ -15,6 +15,7 @@ header{
     max-width: 100%;
     position:relative;
 }
+
 h1{
     color:white;
     position: absolute;
@@ -33,6 +34,7 @@ h1{
     flex-direction: column;
     gap: 0;
 }
+
 h3{
     color:white;
     position: absolute;
@@ -43,6 +45,7 @@ h3{
     margin-left: -3px;
     opacity: 1;
 }
+
 header ul{
     position:absolute;
     right: 0vw;
@@ -50,16 +53,19 @@ header ul{
     line-height: 80px;
     font-size: 15px;
 }
+
 header li{
     display: inline;
     margin-right: 4vw;
     font-size: 15px;
 }
+
 header a{
     color: white;
     text-decoration: none;
     opacity: 1;
 }
+
 header a:hover{
     text-decoration: underline;
 }

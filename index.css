@@ -11,11 +11,96 @@
 
 hr{
     animation: fadeIn 2s ease-in forwards;
+    margin-top: 30px;
 }
 
         
+header{
+    height: 30px;
+    max-width: 100%;
+    position:relative;
+    opacity: 0.5;
+    position: fixed; /* 关键属性 */
+            top: 0;         /* 贴顶 */
+            left: 0;        /* 贴左 */
+            width: 100%;    /* 占满宽度 */
+            background: #333;
+            color: white;
+            padding: 15px;
+            z-index: 1000;  /* 确保导航栏在最上层 */
+}
 
-        
+h1{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    left: 40px;
+    top: 0;
+    line-height: 50px;
+    font-size: 30px;
+    margin-left: 8px;
+    opacity: 0.8;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+header ul{
+    position:absolute;
+    right: 0vw;
+    top: 0;
+    line-height: 80px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+
+header li{
+  position: relative;
+  padding: 20px;
+  font-size: 24px;
+  color: black;
+  line-height: 1;
+  transition: 0.2s all linear;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline;
+  margin-right: 4vw;
+  font-size: 15px;
+}
+
+header li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #e1e1e1;
+    transition: 0.2s all linear;
+}
+
+header li:hover::before{
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-delay: 0.1s;
+    z-index: -1;
+}
+
+header li:hover~li::before{
+    left: 0;
+}
+
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 1;
+}
+
+
+
 .aboutme {
     background-color: #ababab;
     color: #ffffff;
@@ -27,64 +112,121 @@ hr{
     opacity: 0.9;
 }
 
-
-.www h3 {
-    font-size: 50px;
+.www {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     min-height: 100vh;
+    align-items: flex-end;
     flex-direction: column;
-    padding-right: 100px;
+    padding-right: 150px;
+}
+
+.www h3 {
+    color: #ffffff;
+    font-size: 50px;
+    padding-right: 19px;
+    animation: fadeIn 2s ease-in forwards;
 }
 
 
 .www p {
+    color: #ffffff;
     font-size: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction: column;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in forwards;
 }
-        
+
+.www a{
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    border: 1px solid #ece8e8;
+    padding:10px 20px;
+    border-radius: 4px;
+    display: inline;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.www a:hover{
+    text-decoration: underline;
+}
+
 .my  {
     background-color: #f7f7f7;
     height: 95vh;
-}
-       
-.lea {
-    background-color: #ffffff;
+    animation: fadeIn 2s ease-in forwards;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-right: 150px;
 }
 
-.in p{
-         font-size: 30px;
-          margin:20px 0;
-          opacity: 0;
-           justify-content: center;
-            align-items: center;
-           animation: fadeIn 2s ease-in forwards;
-        color: #585151;
-      
+.my h3 {
+    color: #6f6363;
+    font-size: 35px;
+    padding-left: 20px;
+    
+    animation: fadeIn 2s ease-in forwards;
 }
-  .all-class{
+
+.my p {
+    color: #847474;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-left: 20px;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+
+.mymy  {
+    background-color: #d1d1d1;
+    height: 100%;
+    animation: fadeIn 2s ease-in forwards;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-right: 150px;
+}
+
+.mymy h3 {
+    color: #6f6363;
+    font-size: 35px;
+    padding-left: 20px;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+
+.in h3{
+    font-size: 30px;
+    margin:20px 0;
+    opacity: 0;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in forwards;
+    color: #786b6b;
+}
+
+.all-class{
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             flex-direction: row;
-             gap: 20px;
-            justify-content: space-evenly;
+            gap: 20px;
+            justify-content: space-around;
             align-items: center;
   }
 
         .black-border-container {
             animation: fadeIn 2s ease-in forwards;
-            width: 50%;
+            width: 100%;
             max-width: 1000px;
             margin:10px 0;
             border: 1px solid #716a6a;
             padding: 30px;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0); 
+            background-color: rgb(255, 255, 255); 
             justify-content: flex-start;
         }
 
@@ -138,14 +280,15 @@ hr{
 
         /*頁尾*/
         footer {
-            background-color: #ababab;
+            background-color: #515151;
             color: rgb(255, 255, 255);
             height: 60px;
-            margin-top: auto;
             display:flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-size: 12.5px;
+            margin:30px;
         }
 
 
