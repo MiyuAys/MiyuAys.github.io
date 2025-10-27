@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Miyu | Aboutme</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="imagelogo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagelogo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagelogo/favicon-16x16.png">
+    <link rel="manifest" href="imagelogo/site.webmanifest">
+</head>
+<body class="bg-white text-black">
+    <nav class="fixed top-0 w-full bg-white z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="text-lg font-medium">Miyu</div>
+                
+                <!-- 桌面菜单 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#work" class="hover:text-gray-600 transition">Work</a>
+                    <a href="#about" class="hover:text-gray-600 transition">About</a>
+                    <a href="#contact" class="hover:text-gray-600 transition">Contact</a>
+                    <a href="writing.html" class="hover:text-gray-600 transition">Writing</a>
+                    <a href="draw.html" class="hover:text-gray-600 transition">Draw</a>
+                </div>
+
+                <!-- 移动菜单按钮 -->
+                <div id="mobile-menu-button" class="hamburger md:hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 移动菜单 -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button class="close-btn">✕</button>
+        <div class="mobile-menu-content">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="writing.html">Writing</a>
+            <a href="draw.html">Draw</a>
+        </div>
+    </div>
+
+    <!-- Hero区域 -->
+    <section class="min-h-screen flex items-center justify-center px-4 pt-16">
+        <div class="text-center max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-light mb-6 fade-in">
+                Student & Creator
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 fade-in delay-100 max-w-2xl mx-auto">
+                Learning everything, mastering nothing.
+            </p>
+            <div class="fade-in delay-200">
+                <a href="draw.html" class="btn-minimal">
+                    Draw
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集展示 -->
+    <section id="work" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-light mb-12 scroll-element">My Projects</h2>
+            
+            <!-- 项目1 -->
+            <div class="project-item py-8 scroll-element">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-medium mb-2">繪畫</h3>
+                        <p class="text-gray-600">CPS/PS/指繪.<br>像素畫 · 插畫.</p>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">Very ugly painting.</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目2 -->
+            <div class="project-item py-8 scroll-element delay-100">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-medium mb-2">Blender建模</h3>
+                        <p class="text-gray-600">角色模型製作.<br>基礎建模技能.<br>未有時間學習渲染.</p>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">idk</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目3 -->
+            <div class="project-item py-8 scroll-element delay-200">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-medium mb-2">鈎針</h3>
+                        <p class="text-gray-600">經驗比較多，但只有要送人時才有動力鈎.</p>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">oh....</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目4 -->
+            <div class="project-item py-8 scroll-element delay-300">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-medium mb-2">HTML + CSS 網頁製作</h3>
+                        <p class="text-gray-600">作品包含此個人網站與休憩島網頁.<br><a href="https://您的網址" target="_blank" class="text-gray-600 hover:text-black transition">休憩島網頁</a></p>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">hmmm..</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目5 -->
+            <div class="project-item py-8 scroll-element delay-400">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-medium mb-2">Discord Bot</h3>
+                        <p class="text-gray-600">Python Discord Bot 開發<br>休憩島Nonobot創作者.</p>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">uwu..</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目6 -->
+            <div class="project-item py-8 scroll-element delay-500">
+                <div class="flex flex-col md:flex-row md:items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-medium mb-2">Minecraft伺服器</h3>
+                        <p class="text-gray-600">Minecraft伺服器架設<br>休憩島伺服器服主<br>9月15日開服.</p>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">uwu..</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-4xl mx-auto"></div>
+
+    <!-- 关于我 -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-1 scroll-element">
+                    <h2 class="text-2xl font-light mb-6">About</h2>
+                </div>
+                <div class="md:col-span-2 scroll-element delay-100">
+                    <p class="text-gray-600 mb-6">
+                        Miyu<br>
+                        2007 年生<br>
+                        
+                        學生與工作者<br>
+                        忙碌於學業與工作之間<br>
+                        
+                        創作力佳，程式力持續成長<br>
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        語言：中文 ✓ 日文 ✓ 英文 △.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="text-sm border border-gray-300 px-3 py-1">HTML + CSS</span>
+                        <span class="text-sm border border-gray-300 px-3 py-1">Python</span>
+                        <span class="text-sm border border-gray-300 px-3 py-1">Drawing</span>
+                        <span class="text-sm border border-gray-300 px-3 py-1">qwq</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider max-w-4xl mx-auto"></div>
+
+    <!-- 联系 -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-1 scroll-element">
+                    <h2 class="text-2xl font-light mb-6">Contact</h2>
+                </div>
+                <div class="md:col-span-2 scroll-element delay-100">
+                    <p class="text-gray-600 mb-8">
+                        ok.....
+                    </p>
+                    <div class="space-y-4">
+                        <div>
+                            <a href="mailto:hello@example.com" class="text-gray-600 hover:text-black transition">miyuays06@gmail.com/a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-gray-600 hover:text-black transition">Discord:miyu0w0_</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 极简页脚 -->
+    <footer class="py-12 px-4 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-lg font-medium">Miyu</div>
+                </div>
+                <div class="text-gray-600 text-sm">
+                    &copy; 2025 All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动菜单切换
+        const hamburger = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        closeBtn.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        });
+        
+        // 点击菜单链接后关闭菜单
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-content a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // 滚动触发动画
+        function checkScroll() {
+            const elements = document.querySelectorAll('.scroll-element');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight * 0.85) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        
+        // 页面加载时和滚动时检查动画
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
+    </script>
+</body>
+</html>
